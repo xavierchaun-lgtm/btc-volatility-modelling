@@ -25,4 +25,12 @@ Bitcoin daily price data from [Yahoo Finance](https://finance.yahoo.com/)
 - Comparison of AIC/BIC
 - Forecast accuracy metrics
 
-## 📁 Project Structure
+
+## Quickstart
+
+```bash
+pip install -r requirements.txt
+# 运行 BTC & ETH，t 分布：
+python -m src.btcvol.cli --tickers BTC-USD ETH-USD --dist t --start 2018-01-01 --end 2024-12-31
+# 仅展示图像（不阻塞执行可去掉 --show）：
+python -m src.btcvol.cli --tickers BTC-USD --dist normal --show
